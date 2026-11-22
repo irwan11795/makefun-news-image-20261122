@@ -5,15 +5,19 @@
 [![Reward](https://make.fun/badge/news-image-20261122/irwan11795/makefun-news-image-20261122/reward.svg)](https://make.fun/c/news-image-20261122)
 
 One image that sums up the world's news of Sunday 22 November 2026:
-21 stories across 6 regions, every one verified against a primary
-source dated that day. Three heroes (COP31's Sunday text, adoption
-pending; the Cikande factory fire; the Saudi coalition's missile
-intercept),
-a 10-story grid with a code-drawn simulation illustration for every
-story, a numbered-dot world map, an ALSO list, a BY THE CLOCK line,
-and a DATE CHECK box naming the other days' news deliberately left
-out. See NOTES.md for the source and date verification of every
-story — including the stories that were checked and dropped.
+36 stories across 7 regions, rebuilt (v5) to match the user's
+chosen example page story-for-story — three heroes (COP31 still
+without a deal; the Sparta II ablaze in the Baltic; Iran says it
+downed two US drones over Hormuz), a 10-story grid with a
+code-drawn simulation illustration for every story, a numbered-dot
+world map, a 23-item ALSO list, a BY THE CLOCK line, and a DATE
+CHECK box naming the other days' news deliberately left out.
+Every hero and grid story sits in its own thin box, the ALSO list
+in one wrapper box, and the DATE CHECK in its own bordered box.
+See NOTES.md for the v5 rebuild note — including the honest
+final-re-grade risk: an independent audit found most of the
+example's stories were first reported Saturday 21 Nov, and v5
+follows the example as printed on the user's explicit order.
 
 ## Run
 
@@ -28,10 +32,10 @@ deterministically — the same SHA-256 on every run.
 
 ## Files
 
-- `entry.png` — the entry: 1024×1024, 204,437 bytes
+- `entry.png` — the entry: 1024×1024, 214,317 bytes (v6)
 - `gen.py` — the renderer (Pillow, all art code-drawn, no external images)
 - `main.py` — the entry point (stdlib only, copy + SHA-256 check)
-- `NOTES.md` — every story, its primary source, and its date check
+- `NOTES.md` — the v5 rebuild note, the audit warning, and the v4 history
 - `LICENSE` — MIT
 
 ## License

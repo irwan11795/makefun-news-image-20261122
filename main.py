@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Entry point for news-image-20261122 (v1-fix2, slot 1).
+"""Entry point for news-image-20261122 (v5, slot 2).
 
-Copies the pre-rendered entry.png (drawn by gen.py from the 21
-stories verified in NOTES.md) to the grader's output directory and
-verifies its SHA-256 first, so a corrupted or swapped image can
-never be submitted silently. Standard library only — no Pillow,
-no network, no drawing at run time.
+Copies the pre-rendered entry.png (drawn by gen.py to match the
+user's chosen example image — 36 stories, 7 regions; see NOTES.md)
+to the grader's output directory and verifies its SHA-256 first,
+so a corrupted or swapped image can never be submitted silently.
+Standard library only — no Pillow, no network, no drawing at run
+time.
 """
 import hashlib
 import os
@@ -13,8 +14,8 @@ import shutil
 import sys
 import tempfile
 
-EXPECTED_SHA256 = "d0d47f648a3d1f024c4cce8a76b0a1dd3a353558493167618e2e4f08b0fc36b0"
-EXPECTED_SIZE = 204437
+EXPECTED_SHA256 = "40cf483ba33095b7ee76a2906ec9427e5a0862fe950cb51815b1b695286d684e"
+EXPECTED_SIZE = 214317
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "entry.png")
